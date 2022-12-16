@@ -1,6 +1,4 @@
 # Cargando librerias
-import os
-import base64
 # Librerias reportlab a usar:
 from reportlab.platypus import (SimpleDocTemplate, PageBreak, Image, Spacer, Paragraph, Table, TableStyle)
 from reportlab.lib.styles import getSampleStyleSheet
@@ -11,8 +9,9 @@ from reportlab.lib import colors
 from reportlab.pdfgen import canvas
 # Libreria para importar a base64
 from io import open
+import base64
 
-PAGE_HEIGHT = defaultPageSize[1];
+PAGE_HEIGHT = defaultPageSize[1]
 PAGE_WIDTH = defaultPageSize[0]
 estilo = getSampleStyleSheet()
 Imagen = Image('miku.png', width=100, height=100)
